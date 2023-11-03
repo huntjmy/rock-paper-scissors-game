@@ -27,6 +27,28 @@ body {
     column-gap: 7rem;
 }
 
+.container.start .user_result {
+    transform-origin: left;
+    animation: userShake 0.6s ease infinite;
+}
+
+@keyframes userShake {
+    50% {
+        transform: rotate(10deg);
+    }
+}
+
+.container.start .cpu_result {
+    transform-origin: right;
+    animation: cpuShake 0.6s ease infinite;
+}
+
+@keyframes cpuShake {
+    50% {
+        transform: rotate(-10deg);
+    }
+}
+
 .result_images img {
     width: 100px;
 }
@@ -41,7 +63,7 @@ body {
 
 .result {
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1.6rem;
     color: #a6a6a6;
     margin-top: 1.5rem;
 }
@@ -57,6 +79,10 @@ body {
     align-items: center;
     cursor: pointer;
     margin-top: 2.5rem;
+}
+
+.container.start .option_images {
+    pointer-events: none;
 }
 
 .option_image {
