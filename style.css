@@ -71,6 +71,10 @@ body {
     opacity: 1;
 }
 
+.option_image.active {
+    opacity: 1;
+}
+
 .option_image p {
     color: #7d2ae8;
     font-size: 1.235rem;
